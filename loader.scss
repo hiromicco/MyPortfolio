@@ -1,0 +1,42 @@
+@import 'mixin';
+
+$cBlack: #555;
+$cGold: #d3c290;
+
+.three-dot-spinner {
+  text-align: center;
+
+  & div {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: $cGold;
+    border-radius: 50%;
+    @include animation(
+      $name: sk-bouncedelay,
+      $duration: 1.4s,
+      $iteration-count: infinite
+    );
+
+    @for $i from 1 through 2 {
+      &:nth-child(#{$i}) {
+        animation-delay: -0.32s / $i;
+      }
+    }
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
