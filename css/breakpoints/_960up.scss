@@ -1,0 +1,63 @@
+.font_sm {
+  font-size: 16px;
+}
+.font_md {
+  font-size: 24px;
+}
+.font_lr {
+  font-size: 34px;
+}
+.font_sm {
+  font-size: 60px;
+}
+
+.mb_md {
+  margin-bottom: 70px !important;
+}
+.pt_md {
+  padding-top: 100px !important;
+}
+.pt_lg {
+  padding-top: 170px !important;
+}
+
+.header {
+  &__inner {
+    & > nav {
+      display: block;
+    }
+  }
+}
+.mobile_menu__btn {
+  display: none;
+}
+
+.about {
+  &__img,
+  &__textbox {
+    flex-basis: 48%;
+  }
+
+  &__favorite {
+
+    &__inner {
+      & p {
+        font-size: 14px;
+        line-height: 14px;
+
+        &:first-child {
+          font-size: 14px;
+        }
+      }
+      & span {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.works {
+  &__title {
+    @ex
+  }
+}

@@ -1,0 +1,102 @@
+@import 'mixin';
+
+#global_container {
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.pace-done #global_container {
+  opacity: 1;
+}
+
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+ 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+ 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+ 
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+ 
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+ 
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+}
+ 
+.pace .pace-progress {
+  transform: none !important;
+  text-align: center;
+}
+ 
+.pace .pace-progress:after {
+  content: attr(data-progress-text);
+  display: block;
+  font-weight: 100;
+  font-size: 2em;
+  font-family: Helvetica, sans-serif;
+  color: $cMain;
+}
+ 
+.pace.pace-inactive {
+  display: none;
+}
+
+
+.pace-progress-inner {
+  text-align: center;
+  margin-bottom: 20px;
+
+  & div {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-color: $cGold;
+    border-radius: 50%;
+    margin: 0 5px;
+    @include animation(
+      $name: sk-bouncedelay,
+      $duration: 1.4s,
+      $iteration-count: infinite
+    );
+
+    @for $i from 1 through 2 {
+      &:nth-child(#{$i}) {
+        animation-delay: -0.32s / $i;
+      }
+    }
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

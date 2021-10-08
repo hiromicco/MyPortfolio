@@ -1,0 +1,15 @@
+
+.gasp_animate_title {
+  // opacity: 0;
+
+  &.inview {
+    opacity: 1;
+    & .char {
+      display: inline-block;
+    }
+  }
+
+  & .char {
+    opacity: 0;
+  }
+}
