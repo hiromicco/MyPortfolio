@@ -1,12 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const hero = new HeroSlider('.swiper-container');
-  hero.start();
-
-  setTimeout(() => {
-    hero.stop();
-  }, 13000);
-});
-
 class HeroSlider {
   constructor(el) {
     this.el = el;

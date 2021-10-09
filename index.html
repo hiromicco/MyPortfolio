@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,23 +24,19 @@
   <div id="global_container">
     <div id="container">
       <div class="mobile_menu__cover"></div>
+      <div class="nav_trigger"></div>
       <header class="header">
         <div class="header__inner">
-          <nav>
-            <ul class="header__ul">
-              <li class="header__li"><a href="">ABOUT</a></li>
-              <li class="header__li"><a href="">SKILLS</a></li>
-              <li class="header__li"><a href="">WORKS</a></li>
-              <li class="header__li"><a href="">CONTACT</a></li>
-            </ul>
-          </nav>
           <button class="mobile_menu__btn">
             <span></span>
             <span></span>
             <span></span>
           </button>
-        </div>
-        <div class="hero">
+        </div><!-- header__inner -->
+
+      </header>
+      <main>
+        <section class="hero">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img src="images/sp-hero-img.jpg" alt=""></div>
@@ -52,98 +49,112 @@
             </div>
           </div><!-- swiper-container" -->
           <h1 class="hero__title gasp_animate_title">Nakano Hiromi’s Portfolio</h1>
-        </div><!-- hero -->
-      </header>
-      <main>
-        <section class="about">
-          <h2 class="main_title gasp_animate_title">ABOUT</h2>
-          <div class="about__inner">
-            <div class="about__img">
-              <img src="images/sp-profile-img.jpg" alt="My profile photo">
-            </div>
-            <div class="about__textbox">
-              <span>はじめまして！</span><span>中野宏美です</span>
-              <p class="about__text">福岡大学卒業後、地元呉服店にて販売・営業のお仕事に就く。<br class="pc_dn">1年後、本店勤務になり約6年間働く。最高売り上げ年2,000万円。
-              </p>
-              <p class="about__text">東日本大震災をきっかけに<br>「いつ終わるかわからない人生、後悔しないようにやりたいことをやろう！」<br
-                  class="pc_dn">と決意し、長年の夢だった「海外生活」のために英語の勉強と貯金に励む。</p>
-              <p class="about__text">
-                2015年バンクーバーに語学留学、その後現地企業にジョブオファーをもらい、そのまま滞在。IELTS7.0を取得し、2020年永住権取得。<br>コロナで休職を経験し、手に職を付けたいと思いいろいろ手をつけてみたのち、プログラミングにハマる。
-              </p>
-              <div class="about__favorite">
-                <div class="about__favorite__inner">
-                  <p>好きなこと</p><span>：</span>
-                  <p>読書・旅・ビール・投資</p>
-                  <span>・</span>
-                  <p>知的好奇心を満たすこと</p>
-                </div><!-- my_favorite__textbox -->
-              </div><!-- my_favorite -->
-            </div><!-- about__textbox -->
-          </div><!-- about__inner -->
+        </section><!-- hero -->
+        <div class="main_content">
+          <aside class="side left">
+            <i class="fab fa-twitter-square"></i><span class="icon twitter gasp_animate_title">Twitter</span>
+            <i class="fab fa-instagram"></i><span class="icon instagram gasp_animate_title">Instagram</span>
+          </aside>
+          <section id="about" class="about">
+            <h2 class="main_title gasp_animate_title">ABOUT</h2>
+            <div class="about__inner appear down">
+              <div class="about__img item">
+                <img src="images/sp-profile-img.jpg" alt="My profile photo">
+              </div>
+              <div class="about__textbox item">
+                <span class="gasp_animate_title">はじめまして！</span><span class="gasp_animate_title">中野宏美です</span>
+                <p class="about__text">福岡大学卒業後、地元呉服店にて販売・営業のお仕事に就く。<br class="pc_dn">1年後、本店勤務になり約6年間働く。最高売り上げ年2,000万円。
+                </p>
+                <p class="about__text">東日本大震災をきっかけに<br>「いつ終わるかわからない人生、後悔しないようにやりたいことをやろう！」<br
+                    class="pc_dn">と決意し、長年の夢だった「海外生活」のために英語の勉強と貯金に励む。</p>
+                <p class="about__text">
+                  2015年バンクーバーに語学留学、その後現地企業にジョブオファーをもらい、そのまま滞在。IELTS7.0を取得し、2020年永住権取得。<br>コロナで休職を経験し、手に職を付けたいと思いいろいろ手をつけてみたのち、プログラミングにハマる。
+                </p>
+                <div class="about__favorite">
+                  <div class="about__favorite__inner">
+                    <p>好きなこと</p><span>：</span>
+                    <p>読書・旅・ビール・投資</p>
+                    <span>・</span>
+                    <p>知的好奇心を満たすこと</p>
+                  </div><!-- my_favorite__textbox -->
+                </div><!-- my_favorite -->
+              </div><!-- about__textbox -->
+            </div><!-- about__inner -->
 
-        </section><!-- about -->
+          </section><!-- about -->
 
-        <section class="skills">
-          <h2 class="main_title">SKILLS</h2>
-          <div class="skills__inner">
-            <img class="skills__item" src="images/html-5.png" alt="">
-            <img class="skills__item" src="images/css-3.png" alt="">
-            <img class="skills__item" src="images/sass.png" alt="">
-            <img class="skills__item" src="images/javascript.png" alt="">
-            <img class="skills__item" src="images/jquery.png" alt="">
-            <img class="skills__item" src="images/php.png" alt="">
-          </div><!-- skills__inner -->
-          <h3 class="sub_title">その他の資格</h3>
-          <ul class="skills__others">
-            <li>基本情報技術者</li>
-            <li>英語（IELTS7.0）</li>
-            <li>Microsoft Office </li>
-          </ul>
-        </section><!-- skills -->
+          <section id="skills" class="skills">
+            <h2 class="main_title gasp_animate_title">SKILLS</h2>
+            <div class="skills__inner appear down">
+              <img class="skills__item item" src="images/html-5.png" alt="">
+              <img class="skills__item item" src="images/css-3.png" alt="">
+              <img class="skills__item item" src="images/sass.png" alt="">
+              <img class="skills__item item" src="images/javascript.png" alt="">
+              <img class="skills__item item" src="images/jquery.png" alt="">
+              <img class="skills__item item" src="images/php.png" alt="">
+            </div><!-- skills__inner -->
+            <h3 class="sub_title">その他の資格</h3>
+            <ul class="skills__others">
+              <li>基本情報技術者</li>
+              <li>英語（IELTS7.0）</li>
+              <li>Microsoft Office </li>
+            </ul>
+          </section><!-- skills -->
 
-        <section class="works">
-          <h2 class="main_title">WORKS</h2>
-          <div class="works__inner">
-            <div class="works__item">
-              <div class="cover_slide hover_darken">
-                <img class="img_zoom" src="images/works-thumbnail-portfolio.png" alt="">
-              </div><!-- cover_slide -->
-              <h3 class="works__title">My Portfolio</h3>
-              <p>Skills :</p>
-              <p>HTML/SCSS/JavaScript/Adobe XD/Photoshop</p>
-              <p>制作時間：</p>
-              <p>10時間</p>
-            </div><!-- works__item -->
-            <div class="works__item">
-              <div class="cover_slide hover_darken">
-                <img class="img_zoom" src="images/works.png" alt="">
-              </div><!-- cover_slide -->
-              <h3 class="works__title">登山ツール管理アプリ</h3>
-              <p>Skills :</p>
-              <p>HTML/SCSS/JavaScript/Adobe XD/Photoshop</p>
-              <p>制作時間：</p>
-              <p>10時間</p>
-            </div><!-- works__item -->
-            <div class="works__item">
-              <div class="cover_slide hover_darken">
-                <img class="img_zoom" src="images/works.png" alt="">
-              </div><!-- cover_slide -->
-              <h3 class="works__title">Airbnb サイト（架空）</h3>
-              <p>Skills :</p>
-              <p>HTML/SCSS/JavaScript/Adobe XD/Photoshop</p>
-              <p>制作時間：</p>
-              <p>10時間</p>
-            </div><!-- works__item -->
-          </div><!-- works_inner -->
-        </section><!-- works -->
+          <section id="works" class="works">
+            <h2 class="main_title gasp_animate_title">WORKS</h2>
+            <div class="works__inner">
+              <div class="works__item">
+                <div class="cover_slide hover_darken">
+                  <img class="img_zoom" src="images/works-thumbnail-portfolio.png" alt="">
+                </div><!-- cover_slide -->
+                <h3 class="works__title">My Portfolio</h3>
+                <p>Skills :</p>
+                <p>HTML/SCSS/JavaScript/Adobe XD/Photoshop</p>
+                <p>制作時間：</p>
+                <p>10時間</p>
+              </div><!-- works__item -->
+              <div class="works__item">
+                <div class="cover_slide hover_darken">
+                  <img class="img_zoom" src="images/works.png" alt="">
+                </div><!-- cover_slide -->
+                <h3 class="works__title">登山ツール管理アプリ</h3>
+                <p>Skills :</p>
+                <p>HTML/SCSS/JavaScript/Adobe XD/Photoshop</p>
+                <p>制作時間：</p>
+                <p>10時間</p>
+              </div><!-- works__item -->
+              <div class="works__item">
+                <div class="cover_slide hover_darken">
+                  <img class="img_zoom" src="images/works.png" alt="">
+                </div><!-- cover_slide -->
+                <h3 class="works__title">Airbnb サイト（架空）</h3>
+                <p>Skills :</p>
+                <p>HTML/SCSS/JavaScript/Adobe XD/Photoshop</p>
+                <p>制作時間：</p>
+                <p>10時間</p>
+              </div><!-- works__item -->
+            </div><!-- works_inner -->
+          </section><!-- works -->
 
-        <section class="contact">
-          <h2>CONTACT</h2>
-          <div class="sns_icons">
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div><!-- sns_icons -->
-        </section><!-- contact -->
+          <section id="contact" class="contact">
+            <h2 class="gasp_animate_title">CONTACT</h2>
+            <div class="sns_icons">
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div><!-- sns_icons -->
+          </section><!-- contact -->
+          <aside class="side right">
+            <nav class="side__nav">
+              <ul class="side__ul">
+                <li class="side__li"><a class="gasp_animate_title" href="#about">ABOUT</a></li>
+                <li class="side__li"><a class=" gasp_animate_title" href="#skills">SKILLS</a></li>
+                <li class="side__li"><a class=" gasp_animate_title" href="#works">WORKS</a></li>
+                <li class="side__li"><a class=" gasp_animate_title" href="#contact">CONTACT</a></li>
+              </ul>
+            </nav>
+          </aside>
+        </div><!-- main_content -->
       </main>
 
       <footer class="site_footer">
@@ -152,13 +163,13 @@
     </div><!-- #container -->
     <nav class="mobile_menu">
       <ul class="mobile_menu__main">
-        <li class="mobile_menu__item"><a class="mobile_menu__link" href=""><span>ABOUT</span><span
+        <li class="mobile_menu__item"><a class="mobile_menu__link side__link " href="#about"><span>ABOUT</span><span
               class="text_sm">私について</span></a></li>
-        <li class="mobile_menu__item"><a class="mobile_menu__link" href=""><span>SKILLS</span><span
+        <li class="mobile_menu__item"><a class="mobile_menu__link side__link " href="#skills"><span>SKILLS</span><span
               class="text_sm">使える技術</span></a></li>
-        <li class="mobile_menu__item"><a class="mobile_menu__link" href=""><span>WORKS</span><span
+        <li class="mobile_menu__item"><a class="mobile_menu__link side__link " href="#works"><span>WORKS</span><span
               class="text_sm">制作実績</span></a></li>
-        <li class="mobile_menu__item"><a class="mobile_menu__link" href=""><span>CONTACT</span><span
+        <li class="mobile_menu__item"><a class="mobile_menu__link side__link " href="#contact"><span>CONTACT</span><span
               class="text_sm">お問い合わせ</span></a></li>
       </ul>
     </nav>

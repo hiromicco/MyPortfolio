@@ -4,7 +4,6 @@
   right: 0;
   top: 60px;
   &__btn {
-    position: fixed;
     background-color: transparent;
     border: none;
     outline: none !important;
@@ -33,6 +32,7 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity 1s;
+    z-index: 200;
   }
   &__main {
     perspective: 2000px;

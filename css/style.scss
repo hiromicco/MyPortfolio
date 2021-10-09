@@ -1,5 +1,6 @@
 @import 'modules/variables';
 @import 'modules/mixin';
+@import 'modules/appear';
 @import 'modules/hero-slider';
 @import 'modules/text-animation';
 @import 'modules/image-slide';
@@ -22,35 +23,3 @@
   @import "breakpoints/1280up";
 }
 
-
-
-
-// .container {
-//   width: 100%;
-//   padding: 0 20px;
-// }
-
-// header
-
-
-// main
-// ABOUT
-
-// SKILLS
-
-// WORKS
-
-
-// footer
-.site_footer {
-  height: 70px;
-  color: $cWhite;
-  background-color: $cMain;
-
-  & p {
-    font-size: 16px;
-    font-weight: 100;
-    text-align: center;
-    line-height: 70px;
-  }
-}
