@@ -8,7 +8,7 @@ class HeroSlider {
     return new Swiper(this.el, {
       // Optional parameters
       // direction: 'vertical',
-      loop: true,
+      loop: false,
       effect: 'fade',
       centeredSlides: true,
       slidesPerView: 1,

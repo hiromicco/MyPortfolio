@@ -35,7 +35,6 @@
 .about {
   &__img,
   &__textbox {
-    flex-basis: 48%;
   }
 
   &__favorite {
@@ -53,11 +52,5 @@
         font-size: 14px;
       }
     }
-  }
-}
-
-.works {
-  &__title {
-    @ex
   }
 }

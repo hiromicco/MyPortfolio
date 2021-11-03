@@ -1,7 +1,5 @@
 .flex {
   flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 br.pc_dn {
@@ -16,21 +14,11 @@ br.pc_dn {
 
 .about {
   &__inner {
-  }
-
-  &__img,
-  &__textbox {
-    flex-basis: 45%;
-  }
-
-  &__img {
-    & img {
-      width: 80%;
-      margin: 0 auto;
-    }
+    justify-content: space-around;
   }
 
   &__textbox {
+    flex-basis: 70%;
     & span {
       display: inline-block;
     }
@@ -74,6 +62,7 @@ br.pc_dn {
 
 .works {
   &__inner {
+    justify-content: space-between;
   }
 
   &__item {

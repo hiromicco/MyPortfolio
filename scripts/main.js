@@ -55,7 +55,7 @@ class Main {
       this.hero.start();
       setTimeout(() => {
         this.hero.stop();
-      }, 13000);
+      }, 7000);
     } else {
       this.hero.stop();
     }

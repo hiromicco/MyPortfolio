@@ -21,14 +21,14 @@ img {
   font-size: 24px;
 }
 .font_lg {
-  font-size: 40px;
+  font-size: 34px;
 }
 
 .mb_sm {
   margin-bottom: 20px !important;
 }
 .mb_md {
-  margin-bottom: 50px !important;
+  margin-bottom: 40px !important;
 }
 .mb_lg {
   margin-bottom: 50px !important;
@@ -161,10 +161,11 @@ img {
 
   &__inner {
     @extend .flex;
+    justify-content: flex-start;
 
     & img {
       display: block;
-      width: 70%;
+      width: 180px;
       margin: 0 auto;
     }
   }
@@ -289,31 +290,44 @@ img {
   & .sns_icons {
     display: flex;
     justify-content: center;
-    @extend .pb_lg;
+    @extend .pb_sm;
 
     & a {
-      color: #000;
+      color: $cMain;
       margin-right: 20px;
 
       &:nth-of-type(2) {
         margin-right: 0;
       }
       & i {
-        font-size: 48px;
+        font-size: 40px;
       }
     }
   }
 }
 
 .site_footer {
-  height: 70px;
-  color: $cWhite;
+  color: $cGold;
   background-color: $cMain;
+  text-align: center;
+  @extend .pt_sm;
+  @extend .pb_lg;  
 
-  & p {
-    font-size: 16px;
-    font-weight: 100;
+  & div {
     text-align: center;
-    line-height: 70px;
-  }
+    @extend .mb_sm;
+    
+    & > a {
+      font-size: 16px;
+      font-weight: 100;
+      text-decoration: none;
+      color: $cWhite;
+
+      & > i {
+        @extend .font_lr;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+    }
+  }  
 }
