@@ -103,6 +103,12 @@ img {
 
 .hero {
   @extend .mb_sm;
+
+  & .second {
+    background-image: url(../../images/hero-img02-sp.png);
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .main_content {

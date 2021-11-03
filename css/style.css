@@ -801,6 +801,12 @@ img {
           align-items: center;
 }
 
+.hero .second {
+  background-image: url(../../images/hero-img02-sp.png);
+  background-size: cover;
+  background-position: center;
+}
+
 .main_content {
   position: relative;
 }
@@ -1006,6 +1012,9 @@ img {
   }
   .hero__title {
     font-size: 2em;
+  }
+  .hero .second {
+    background-image: url(../../images/hero-img02.png);
   }
   .about__inner {
     -ms-flex-pack: distribute;
