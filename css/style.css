@@ -96,13 +96,22 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  font-size: 1.2em;
   color: white;
   font-weight: 100;
   white-space: nowrap;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 2;
+  text-align: center;
+}
+
+.hero__title h1 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.hero__title p {
+  font-size: 0.8em;
 }
 
 .hero__footer {
